@@ -53,10 +53,12 @@ export default function AuthPage() {
 
             login(u);
             router.push('/dashboard');
-        } catch (err: any) {
-            setError(err?.name === 'AbortError'
-                ? 'اتصال کند است. لطفاً دوباره تلاش کنید'
-                : 'مشکلی در ورود پیش آمد. لطفاً دوباره تلاش کنید');
+        } catch (err: unknown) {
+            const message =
+                err instanceof Error && err.name === 'AbortError'
+                    ? 'اتصال کند است. لطفاً دوباره تلاش کنید'
+                    : 'مشکلی در ورود پیش آمد. لطفاً دوباره تلاش کنید';
+            setError(message);
         } finally {
             clearTimeout(id);
         }
