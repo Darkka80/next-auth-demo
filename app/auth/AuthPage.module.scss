@@ -1,0 +1,37 @@
+.container {
+  max-width: 420px;
+  margin: 150px auto;
+  padding: 40px 30px 70px;
+  text-align: right;
+  background-color: #222831;
+  color: white;
+  border-radius: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+    font-size: .8rem;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  margin-top: 10px;
+  color: #d32f2f;
+  font-size: 0.9rem;
+}

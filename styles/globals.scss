@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "IranSans";
+  src: url("/fonts/IranianSans.woff2") format("woff2"),
+       url("/fonts/IranianSans.woff") format("woff"),
+       url("/fonts/Vazirmatn-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "IranSans", sans-serif;
+  background-color: #f5f5f5;
+}
